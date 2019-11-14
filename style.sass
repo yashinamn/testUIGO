@@ -1,0 +1,167 @@
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Work Sans', sans-serif
+
+.signup
+  display: flex
+  justify-content: center
+  padding: 60.48px 67px 59.52px 68px
+  max-width: 800px
+  background-color: #F4F5FC
+  margin: 0 auto
+  &__bitmap
+    height: 480px
+    width: 137.2px
+    background-color: #5A61ED
+    position: relative
+    &_text
+      font-family: 'PT Sans', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 49px
+      line-height: 63px
+      letter-spacing: 0.5px
+      color: #FFFFFF
+      transform: rotate(-90deg)
+      width: 162px
+      position: absolute
+      bottom: 63px
+      left: 11px
+  &__form
+    background: url(img/Shape.svg), #fff
+    background-repeat: no-repeat
+    background-position: bottom right
+    padding: 38.52px 22px 32.48px 20.8px
+    display: flex
+    flex-direction: column
+    &_control
+      width: 100%
+      border: none
+      background-color: transparent
+      border-bottom: 0.7px solid  #F2F2F2
+      height: 28px
+      font-family: 'Work Sans', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 16px
+      color: #111111
+      &:focus
+        outline: 0
+        outline-offset: 0
+        border-bottom: 0.7px solid  #7C7C7C
+      &_select
+        appearance: none
+
+  &__heading
+    font-weight: 500
+    font-size: 22px
+    line-height: 26px
+    letter-spacing: -0.46px
+    color: #111111
+  &__subheading
+    font-weight: 300
+    font-size: 14px
+    line-height: 16px
+    color: #111111
+    margin-bottom: 20px
+  &__input
+    &-grid
+      flex-grow: 1
+      display: grid
+      gap: 13px
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 42px 42px 42px 42px
+      font-family: 'Work Sans', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 16px
+    &-label
+      font-weight: 300
+      font-size: 12px
+      line-height: 14px
+      color: #7C7C7C
+      cursor: default
+    &_birth
+      display: flex
+    &_wrapper
+      width: 100%
+      overflow: hidden
+      background: url(img/arrow.svg) no-repeat right
+      display: inline
+      &_date
+        width: 56px
+      &_month
+        min-width: 91px
+      &_year
+        width: 68px 
+    &_email
+      position: relative
+      &_checkmark
+        position: absolute
+        right: 0
+        bottom: 11px
+    
+  &__footer
+    display: flex
+    justify-content: space-between
+
+  &__login
+    font-weight: 300
+    font-size: 13px
+    line-height: 15px
+    color: #000000
+    &_link
+      text-decoration: underline
+      color: #5A61ED
+      cursor: pointer
+
+  &__submit-button
+    font-family: 'PT Sans', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    color: #FFFFFF
+    background: #5A61ED
+    border: 0.5px solid #FFFFFF
+    padding: 7px 25px
+    transition-duration: 0.3s
+    &:hover
+      transform: scale(1.1)
+  
+
+
+.radioGender
+  margin-right: 19px
+  margin-top: 20px
+  cursor: pointer
+  &_button
+    margin-top: 10px
+    border-color: #5A61ED
+
+input[type="radio"]:checked:before
+    content: " "
+    display: block
+    position: relative
+    top: 2px
+    left: 2px
+    width: 6px
+    height: 6px
+    border-radius: 50%
+    background: #5A61ED
+
+input[type="radio"]:before
+    content: ""
+    display: block
+    position: relative
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    background-color: white
+    border: 1px solid #5A61ED
+
