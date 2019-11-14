@@ -109,6 +109,7 @@ body
   &__footer
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
 
   &__login
     font-weight: 300
@@ -131,11 +132,10 @@ body
     border: 0.5px solid #FFFFFF
     padding: 7px 25px
     transition-duration: 0.3s
+    max-width: 154px
     &:hover
       transform: scale(1.1)
   
-
-
 .radioGender
   margin-right: 19px
   margin-top: 20px
@@ -165,3 +165,32 @@ input[type="radio"]:before
     background-color: white
     border: 1px solid #5A61ED
 
+@media screen and ( max-width: 799px  )
+  .signup
+    padding: 40px
+    flex-direction: column
+    text-align: center
+    &__bitmap
+      height: 70px
+      width: 100%
+      &_text
+        position: relative
+        line-height: 63px
+        transform: none
+        bottom: auto
+        left: auto
+        text-align: center
+        width: auto
+    &__form
+      padding: 15px
+    &__input-grid
+      grid-template-columns: 1fr 
+      grid-template-rows: 42px 42px 42px 42px 42px 42px 42px 42px
+    &__footer
+      flex-direction: column
+    &__login
+      margin: 15px auto
+    &__submit-button
+      margin: 0 auto
+
+      
